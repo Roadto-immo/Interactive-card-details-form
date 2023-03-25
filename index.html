@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="myStyle.css">
+  <title>Interactive card details form</title>
+  
+ 
+ 
+</head>
+<body>
+<div class="main">
+  
+<div class="card">
+  <div class="card-front">
+    <div class="logo-holder">
+      <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+    </div>
+    <div class="number">
+      0000 0000 0000 0000
+    </div>
+    <div class="help">
+    <div class="cardholder">
+      Jane Appleseed
+    </div>
+    <div class="mister">
+      00/00
+    </div>
+    </div>
+  </div>
+  <div class="card-back">
+    <p class="code">000</p>
+  </div>
+</div>
+<div class="form-section">
+<form action="">
+  <label for="cardholder-name"> Cardholder Name </label>  <br>
+  <input type="text" id="cardholder-name" name="cardholder-name" value="e.g. Jane Appleseed"> <br>
+  <label for="card-number"> Card Number </label> <br>
+  <input type="text" id="card-number" name="card-number" value="e.g. 1234 5678 9123 0000"> <br>
+  <div class="helpe">
+    <div class="exp">
+      <label for="exp-date"> Exp. Date (MM/YY) </label>
+      <div class="conte">
+        <input type="date" class="date" value="MM">
+        <input type="date" class="date" value="YY">
+      </div>
+    </div>
+    <div class="lolo">
+      <label for="cvc">CVC</label><br>
+      <input type="text" value="e.g. 123"> <br>
+    </div>
+  </div>  
+  <input type="submit" class="conf" value="Confirm">
+</form>
+</div>
+  <!-- Completed state start -->
+
+<div class="completed">
+  <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+  <h1 class="thanks">Thank you!</h1>
+  <p class="response"> We've added your card details</p>
+  <button type="button">Continue</button>
+</div>
+
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="myScript.js"></script>
+</body>
+</html>
